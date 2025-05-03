@@ -1,0 +1,117 @@
+{
+	"info": {
+		"_postman_id": "cef2be50-c9c7-4fd8-92f8-c84ade9aa4f7",
+		"name": "softvence",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "40332742"
+	},
+	"item": [
+		{
+			"name": "login",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "profile",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "logout",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "employer list",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "employer creation",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "get single employer",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "update single employer",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzQ2Mjk1NzY5LCJpYXQiOjE3NDYyOTIxNjksImp0aSI6ImJlYjVkYmUyYTQyNjQ3N2E5MTRjZTNiNzdjOTg2YWZjIiwidXNlcl9pZCI6MSwiZW1haWwiOiJqaWxhbkBnbWFpbC5jb20ifQ.duPWfyLECJ1LCBbVjTaK5V0KTvSXKWF_rGB8fEvY0Ow",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "company_name",
+							"value": "therap",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/employers/1/?company_name=therap",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"employers",
+						"1",
+						""
+					],
+					"query": [
+						{
+							"key": "company_name",
+							"value": "therap"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete employer",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		}
+	]
+}
