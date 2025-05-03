@@ -18,5 +18,5 @@ A simple REST API for managing employers, built with Django REST Framework. Incl
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/your-username/employer-management.git
-cd employer-management
+git clone https://github.com/Jilan5/softvence.git
+cd softvence
