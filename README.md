@@ -21,7 +21,7 @@ A simple REST API for managing employers, built with Django REST Framework. Incl
 git clone https://github.com/Jilan5/softvence.git
 cd softvence
 python -m venv env
-env/bin/activate  
+env/scripts/activate  
 ```
 ### 2. set up the django project and database migrations
 ```bash
@@ -35,5 +35,20 @@ python manage.py migrate
 python manage.py runserver
 ```
 ### 4. Api endpoints
-
+###🔐 Authentication
+| Method | Endpoint              | Description                      |
+| ------ | --------------------- | -------------------------------- |
+| POST   | `/api/auth/signup/`   | Register a new user              |
+| POST   | `/api/auth/login/`    | Obtain JWT access & refresh      |
+| POST   | `/api/auth/logout/`   | Logout & blacklist refresh token |
+| GET    | `/api/auth/profile/`  | Get current user profile         |
+| POST   | `/api/token/refresh/` | Get new access token (optional)  |
+###🔐  Employer CRUD (Authenticated Only)
+| Method | Endpoint               | Description                       |
+| ------ | ---------------------- | --------------------------------- |
+| POST   | `/api/employers/`      | Create a new employer             |
+| GET    | `/api/employers/`      | List all employers (for the user) |
+| GET    | `/api/employers/<id>/` | Retrieve a specific employer      |
+| PUT    | `/api/employers/<id>/` | Update a specific employer        |
+| DELETE | `/api/employers/<id>/` | Delete a specific employer        |
 
