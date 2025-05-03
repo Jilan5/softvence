@@ -23,12 +23,10 @@ cd softvence
 python -m venv env
 env/scripts/activate  
 ```
-### 2. set up the django project and database migrations
+### 2. set up the django project 
 ```bash
 pip install -r requirements.txt
 
-python manage.py makemigrations
-python manage.py migrate
 ```
 ### 3. Run the Backend server
 ```bash
@@ -43,7 +41,9 @@ python manage.py runserver
 | POST   | `/api/auth/logout/`   | Logout & blacklist refresh token |
 | GET    | `/api/auth/profile/`  | Get current user profile         |
 | POST   | `/api/token/refresh/` | Get new access token (optional)  |
+
 ###🔐  Employer CRUD (Authenticated Only)
+
 | Method | Endpoint               | Description                       |
 | ------ | ---------------------- | --------------------------------- |
 | POST   | `/api/employers/`      | Create a new employer             |
