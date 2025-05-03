@@ -20,3 +20,15 @@ A simple REST API for managing employers, built with Django REST Framework. Incl
 ```bash
 git clone https://github.com/Jilan5/softvence.git
 cd softvence
+```
+### 2. set up the django project and database migrations
+```bash
+pip install -r requirements.txt
+
+python manage.py makemigrations
+python manage.py migrate
+```
+### 3. Run the Backend server
+```bash
+python manage.py runserver
+
