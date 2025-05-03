@@ -15,11 +15,13 @@ A simple REST API for managing employers, built with Django REST Framework. Incl
 
 ## 🚀 Installation Guide
 
-### 1. Clone the Repository
+### 1. Clone the Repository and creating Virtual ENV
 
 ```bash
 git clone https://github.com/Jilan5/softvence.git
 cd softvence
+python -m venv env
+env/bin/activate  
 ```
 ### 2. set up the django project and database migrations
 ```bash
@@ -31,4 +33,7 @@ python manage.py migrate
 ### 3. Run the Backend server
 ```bash
 python manage.py runserver
+```
+### 4. Api endpoints
+
 
