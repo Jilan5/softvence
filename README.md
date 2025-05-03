@@ -41,7 +41,9 @@ python manage.py runserver
 | POST   | `/api/auth/logout/`   | Logout & blacklist refresh token |
 | GET    | `/api/auth/profile/`  | Get current user profile         |
 | POST   | `/api/token/refresh/` | Get new access token (optional)  |
+
 ###🔐  Employer CRUD (Authenticated Only)
+
 | Method | Endpoint               | Description                       |
 | ------ | ---------------------- | --------------------------------- |
 | POST   | `/api/employers/`      | Create a new employer             |
