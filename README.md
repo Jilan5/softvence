@@ -23,12 +23,10 @@ cd softvence
 python -m venv env
 env/scripts/activate  
 ```
-### 2. set up the django project and database migrations
+### 2. set up the django project 
 ```bash
 pip install -r requirements.txt
 
-python manage.py makemigrations
-python manage.py migrate
 ```
 ### 3. Run the Backend server
 ```bash
